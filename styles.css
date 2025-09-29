@@ -1,0 +1,66 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&family=Questrial&display=swap');
+
+* { /* Definições gerais para a página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo as fontes para títulos, subtítulos de segundo nível e links do header e footer */
+h1, h2, nav a {
+    font-family: "Noto Serif Bengali", serif;
+}
+
+/* Definindo as fontes para parágrafos e subtítulos de terceiro nível */
+p, h3 {
+    font-family: "Questrial", sans-serif;
+}
+
+a { /* Retirando a decoração de todos os links */
+    text-decoration: none;
+}
+
+nav a { /* Cor para links do header e footer */
+    color: #fff;
+    margin: 0 1em;
+}
+
+header, footer { /* Definições em comum para header e footer */
+    background-color: #545454;
+    color: #fff;
+    padding: 1em;
+}
+
+footer { /* Alinhamento para os links do footer */
+    text-align: center;
+}
+
+.link_main { /* Definições para o link principal da página */
+    font-size: 1.8em;
+    display: block;
+    margin: 0 0.5em;
+}
+
+section { /* Definiçõe para as sessões da página */
+    padding: 5em;
+}
+
+h2 { /* Alinhamento para subtítulos */
+    text-align: center;
+}
+
+#foto_container {
+    display: inline-block;
+    width: 20em;
+}
+
+#foto_container img {
+    max-width: 100%;
+}
+
+.container_info {
+    margin-left: 2em;
+    display: inline-block;
+    width: 30em;
+}
