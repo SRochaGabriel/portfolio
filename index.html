@@ -10,10 +10,12 @@
     <header> <!-- Cabeçalho -->
         <nav class="nav_header"> <!-- Barra de navegação com os links -->
             <a class="link_main" href="#">Gabriel Sousa Rocha</a>
-            <a href="#secao_sobre">Sobre mim</a>
-            <a href="#secao_tecnologias">Tecnologias e habilidades</a>
-            <a href="#secao_projetos">Projetos</a>
-            <a href="#secao_contato">Contato</a>
+            <div class="links_categorias">
+                <a href="#secao_sobre">Sobre mim</a>
+                <a href="#secao_tecnologias">Tecnologias e habilidades</a>
+                <a href="#secao_projetos">Projetos</a>
+                <a href="#secao_contato">Contato</a>
+            </div>
         </nav>
     </header>
 
@@ -26,13 +28,7 @@
             <div class="container_info">
                 <h2>Sobre mim</h2>
                 <p>
-                    Oi, sou o Gabriel! Minha jornada na área de tecnologia se iniciou em 2020, quando entrei no curso de Desenvolvimento de Sistemas integrado ao Ensino Médio da ETEC.
-                </p>
-                <p>
-                    Depois de um tempo afastado da área, meu interesse pela programação se reacendeu no ano de 2025, além de voltar a estudar pelo CS50x, entrei no curso de Desenvolvimento Web do Instituto da Oportunidade Social.
-                </p>
-                <p>
-                    Atualmente meu foco é desenvolvimento Web, e também me interesso muito por desenvolvimento Mobile pelo meu contato com Ionic.
+                    Estudante de Desenvolvimento Web no Instituto da Oportunidade Social.
                 </p>
             </div>
         </section>
@@ -41,8 +37,9 @@
 
         <!-- Seção 'Tecnologia e habilidades' -->
         <section id="secao_tech">
-            <h2>Tecnologia e habilidades</h2>
-            <div class="container_info">
+            <h2>Tecnologias e habilidades</h2>
+
+            <div class="container_tecnologias">
                 <div class="card_habilidades">
                     <img src="imagens/pure-blue-background-0000ff.avif" width="100" alt="">
                     <h3>&lt; NOME &gt;</h3>
@@ -102,72 +99,75 @@
             <h2>Projetos</h2>
 
             <div class="projetos_display">
+                <!-- Card que exibe um projeto -->
                 <div class="card_projeto">
-                    <img src="imagens/pure-blue-background-0000ff.avif" width="50" alt="">
-                    <div class="card_projeto_body">
+                    <img class="projeto_cover" src="imagens/pure-blue-background-0000ff.avif" alt="">
+                    <div class="card_projeto_header">
                         <h3>&lt; nome do projeto &gt;</h3>
                         <p>&lt; breve descrição &gt;</p>
-                        <div class="techs_projeto">
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                        </div>
+                    </div>
+                    <div class="card_projeto_body">
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
                     </div>
                     <div class="card_projeto_footer">
                         <a href="">
-                            <img src="" alt="Imagem link">
+                            <img class="link_projeto_icon" src="imagens/link_logo.ico" alt="Imagem link">
                             <p>&lt; link caso tenha disponível &gt;</p>
                         </a>
                         <a href="">
-                            <img src="" alt="Imagem link GitHub">
+                            <img class="link_projeto_icon" src="imagens/github_logo.ico" alt="Imagem link GitHub">
                         </a>
                     </div>
                 </div>
+
                 <div class="card_projeto">
-                    <img src="imagens/pure-blue-background-0000ff.avif" width="50" alt="">
-                    <div class="card_projeto_body">
+                    <img class="projeto_cover" src="imagens/pure-blue-background-0000ff.avif" alt="">
+                    <div class="card_projeto_header">
                         <h3>&lt; nome do projeto &gt;</h3>
                         <p>&lt; breve descrição &gt;</p>
-                        <div class="techs_projeto">
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                        </div>
+                    </div>
+                    <div class="card_projeto_body">
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
                     </div>
                     <div class="card_projeto_footer">
                         <a href="">
-                            <img src="" alt="Imagem link">
+                            <img class="link_projeto_icon" src="imagens/link_logo.ico" alt="Imagem link">
                             <p>&lt; link caso tenha disponível &gt;</p>
                         </a>
                         <a href="">
-                            <img src="" alt="Imagem link GitHub">
+                            <img class="link_projeto_icon" src="imagens/github_logo.ico" alt="Imagem link GitHub">
                         </a>
                     </div>
                 </div>
+
                 <div class="card_projeto">
-                    <img src="imagens/pure-blue-background-0000ff.avif" width="50" alt="">
-                    <div class="card_projeto_body">
+                    <img class="projeto_cover" src="imagens/pure-blue-background-0000ff.avif" alt="">
+                    <div class="card_projeto_header">
                         <h3>&lt; nome do projeto &gt;</h3>
                         <p>&lt; breve descrição &gt;</p>
-                        <div class="techs_projeto">
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                            <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
-                        </div>
+                    </div>
+                    <div class="card_projeto_body">
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
+                        <p class="tech_display">&lt; tecnologia utilizada &gt;</p>
                     </div>
                     <div class="card_projeto_footer">
                         <a href="">
-                            <img src="" alt="Imagem link">
+                            <img class="link_projeto_icon" src="imagens/link_logo.ico" alt="Imagem link">
                             <p>&lt; link caso tenha disponível &gt;</p>
                         </a>
                         <a href="">
-                            <img src="" alt="Imagem link GitHub">
+                            <img class="link_projeto_icon" src="imagens/github_logo.ico" alt="Imagem link GitHub">
                         </a>
                     </div>
                 </div>
