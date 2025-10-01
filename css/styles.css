@@ -1,0 +1,92 @@
+/* --------- ESTILOS GERAIS DA PÁGINA --------- */
+
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&family=Questrial&display=swap');
+
+/* Retirando margem e padding de todos os elementos, e definindo como border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Arrendondando as bordas de todas as imagens */
+img {
+    border-radius: 10px;
+    width: 30%;
+}
+
+/* Definindo fonte e peso de fonte para títulos, subtítulos de segundo nível e links de navegação */
+h1, h2, nav a {
+    font-family: "Noto Serif Bengali", serif;
+    font-weight: 400;
+}
+
+/* Definindo fonte para parágrafos e títulos de terceiro nível */
+p, h3 {
+    font-family: "Questrial", sans-serif;
+}
+
+/* Definindo font-size de 1.8em para os títulos de seção */
+h2 {
+    font-size: 1.8em;
+}
+
+/* Definições em comum para o header e footer */
+header, footer {
+    background-color: #545454;
+    color: #fff;
+    padding: 1em;
+}
+
+/* Centralizando horizontalmente a NAV que está no footer */
+footer {
+    justify-items: center;
+}
+
+/* Definindo background do main */
+main {
+    background-color: #d9d9d9;
+}
+
+/* Alinhamento central para os subtítulos de segundo nível */
+h2 {
+    text-align: center;
+}
+
+/* Retirando text-decoration de todos os links */
+a {
+    text-decoration: none;
+}
+
+/* Definindo os Navs como flexbox com seus itens alinhandos verticalmente ao centro  */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Definindo cor, margem lateral e tamanho para os links do nav */
+nav a {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0 30px;
+}
+
+/* Definindo padding vertical de 5em e horizontal de 1em */
+section {
+    padding: 5em 1em;
+}
+
+/* Definições para o link principal da Header */
+.link_main {
+    font-size: 1.8em;
+    /* flex-grow com valor de 1 para que o link principal tome o espaço livre da flexbox e os links restantes fiquem à direita */
+    flex-grow: 1;
+}
+
+/* Por questão de responsividade, definindo a div que contém os links das seções com uma flexbox com wrap ativado */
+.link_secoes {
+    display: flex;
+    flex-wrap: wrap;
+}

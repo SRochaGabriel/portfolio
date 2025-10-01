@@ -1,0 +1,27 @@
+/* --------- ESTILOS DA SEÇÃO 'CONTATO' --------- */
+
+/* Definindo o container dos cards de contato como um flexbox de espaçamento uniforme entre os itens */
+.contatos_display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 5em;
+}
+
+/* Definições para o card de contato */
+.contato_card {
+    width: 8em;
+    text-align: center;
+    color: #000;
+}
+
+/* Tamanho do texto do card */
+.contato_card p {
+    font-size: 1.6em;
+}
+
+/* Tamanho e margem vertical para a imagem do card */
+.contato_card img {
+    width: 100%;
+}

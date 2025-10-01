@@ -1,0 +1,25 @@
+/* --------- ESTILOS DA SEÇÃO 'TECNOLOGIAS E HABILIDADES' --------- */
+
+/* Definindo o container que exibe os cards de tecnologias como um flexbox com seu conteúdo alinhado horizontalmente de maneira central e com um gap de 2em */
+.container_tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5em 0;
+    gap: 2em;
+}
+
+/* Configurando o tamanho e alinhamento do texto do card de habilidades */
+.card_habilidades {
+    padding: 1em;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #545454;
+    background-color: #ececec;
+    width: 6em;
+}
+
+/* Garantindo que a imagem tome 100% do espaço que puder tomar no card */
+.card_habilidades img {
+    width: 100%;
+}

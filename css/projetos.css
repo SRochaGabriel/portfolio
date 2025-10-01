@@ -1,0 +1,75 @@
+/* --------- ESTILOS DA SEÇÃO 'PROJETOS' --------- */
+
+/* Definindo que a seção que contém os cards dos projetos será um flexbox com gap de 5em entre seus itens e alinhamento horizontal central */
+.projetos_display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+    padding: 5em 0;
+}
+
+/* Definições para o card que exibe um projeto */
+.card_projeto {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 3px solid #2b2b2b;
+    width: 25em;
+    color: #fff;
+}
+
+/* Garantindo que a imagem do projeto tome 100% de width do card e tenha um border radius de 8px para os cantos superiores e 0 para os cantos inferiores*/
+.projeto_cover {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Definindo padding de 1em para as sub-seções do card */
+.card_projeto_header, .card_projeto_body, .card_projeto_footer {
+    padding: 1em;
+}
+
+/* Definindo margem inferior de 5px para o nome do projeto */
+.card_projeto_header h3 {
+    margin-bottom: 5px;
+}
+
+/* Definindo as sub-seções de body e footer do card como flexboxes */
+.card_projeto_body, .card_projeto_footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Os itens do flexbox do body do card terão gap de 1em */
+.card_projeto_body {
+    gap: 10px;
+}
+
+/* Definições para os itens P do body do card, que mostram as tecnologias utilizadas no projeto */
+.card_projeto_body p {
+    background-color: #5a5a5a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Definindo que os itens do footer serão jogados para o canto do flexbox */
+.card_projeto_footer {
+    justify-content: space-between;
+}
+
+/* Cor para o link do footer */
+.card_projeto_footer a {
+    color: #fff;
+}
+
+/* Definindo que o link que carrega um ícone e o nome do projeto seja um flexbox com alinhamento vertical central */
+.link_deploy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Width de 3em para os ícones de link e do github */
+.link_projeto_icon {
+    width: 3em;
+}
