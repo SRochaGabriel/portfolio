@@ -5,21 +5,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5em 0;
-    gap: 2em;
+    gap: 1em 2em;
+    margin-top: min(2.5em, 4vw);
 }
 
 /* Configurando o tamanho e alinhamento do texto do card de habilidades */
 .card_habilidades {
-    padding: 1em;
-    justify-items: center;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 2px #252525;
+    width: min(6.5em, 20%);
     border-radius: 10px;
-    box-shadow: 0 0 5px #545454;
-    background-color: #ececec;
-    width: 6em;
+    max-height: fit-content;
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 /* Garantindo que a imagem tome 100% do espaço que puder tomar no card */
-.card_habilidades img {
+.card_tec_img {
     width: 100%;
+    padding: 5px 5px 0 5px;
+}
+
+/* Parte inferior do card que só deve ser exibida ao passar do mouse */
+.info_tecnologias {
+    text-align: center;
+    font-size: 1.2em;
+    max-height: 0;
+    margin-bottom: 5px;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.card_habilidades:hover .info_tecnologias {
+    max-height: 50px;
+}
+
+/* Aumento do box-shadow ao passar do mouse no card */
+.card_habilidades:hover {
+    box-shadow: 0 0 5px #252525;
 }

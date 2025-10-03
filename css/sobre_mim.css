@@ -1,29 +1,38 @@
 /* --------- ESTILOS DA SEÇÃO 'SOBRE MIM' --------- */
 
-/* Definição o container da seção como um flexbox de conteúdo centralizado e com um gap de 5em entre os itens */
-#secao_sobre {
+/* Definindo o container que contém as informações de texto e a foto como uma flexbox de conteúdo centralizado */
+.container_sobre {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5em;
-    padding: 5em 1em;
+    align-items: center;
+    gap: 2em 5em;
+    padding: 0 1em;
 }
 
-/* Definindo width e height do container da foto, arredondamento da div para 10px, foto com background-image, tamanho da foto deve cobrir toda a div, background não deve ser repetido */
-#foto_container {
-    width: 20em;
-    height: 20em;
-    border-radius: 10px;
-    background-image: url(../imagens/foto.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+/* Definindo width responsivo para a div que contém a foto */
+.foto_sobre {
+    width: min(22em, 70%);
+}
+
+/* Definições para a foto */
+#foto {
+    width: 100%;
+    border-radius: 100%;
+    pointer-events: none;
 }
 
 /* Definindo o width do container do texto 'Sobre mim' */
-.container_info {
+.info_sobre {
     width: 30em;
 }
 
-.container_info p {
+/* Margem para separar o texto do título */
+.info_sobre h2 {
+    margin-bottom: 10px;
+}
+
+/* Definindo font-size responsivo para o texto */
+.info_sobre p {
     font-size: 1.4em;
 }

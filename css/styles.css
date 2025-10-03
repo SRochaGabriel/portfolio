@@ -10,14 +10,13 @@
     box-sizing: border-box;
 }
 
-/* Arrendondando as bordas de todas as imagens */
-img {
-    border-radius: 10px;
-    width: 30%;
+/* Definindo scroll-behavior */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Definindo fonte e peso de fonte para títulos, subtítulos de segundo nível e links de navegação */
-h1, h2, nav a {
+/* Definindo fonte e peso de fonte para subtítulos de segundo nível e links de navegação */
+h2, nav a {
     font-family: "Noto Serif Bengali", serif;
     font-weight: 400;
 }
@@ -27,14 +26,20 @@ p, h3 {
     font-family: "Questrial", sans-serif;
 }
 
-/* Definindo font-size de 1.8em para os títulos de seção */
-h2 {
+/* Definindo font-size para os títulos de seção e link principal do nav */
+.link_main, h2 {
     font-size: 1.8em;
+}
+
+
+/* Alterando a cor das linhas que dividem as seções */
+hr {
+    border: 1px solid #bbb;
 }
 
 /* Definições em comum para o header e footer */
 header, footer {
-    background-color: #545454;
+    background-color: #252525;
     color: #fff;
     padding: 1em;
 }
@@ -59,34 +64,35 @@ a {
     text-decoration: none;
 }
 
-/* Definindo os Navs como flexbox com seus itens alinhandos verticalmente ao centro  */
+/* Definindo os Navs como flexbox com seus itens alinhandos verticalmente ao centro e com space-between no eixo principal */
 nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
 /* Definindo cor, margem lateral e tamanho para os links do nav */
 nav a {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin: 0 30px;
 }
 
-/* Definindo padding vertical de 5em e horizontal de 1em */
+/* Definindo padding vertical responsivo e horizontal de 1em */
 section {
-    padding: 5em 1em;
-}
-
-/* Definições para o link principal da Header */
-.link_main {
-    font-size: 1.8em;
-    /* flex-grow com valor de 1 para que o link principal tome o espaço livre da flexbox e os links restantes fiquem à direita */
-    flex-grow: 1;
+    padding: min(5em, 8vw) 1em;
 }
 
 /* Por questão de responsividade, definindo a div que contém os links das seções com uma flexbox com wrap ativado */
 .link_secoes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cor para os links do nav ao passar do mouse */
+nav a:hover {
+    color: #ffc400;
+    transition: color 0.2s ease-in-out;
 }

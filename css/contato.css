@@ -4,24 +4,24 @@
 .contatos_display {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2em;
-    padding: 5em;
+    justify-content: center;
+    gap: 3.5em;
+    margin-top: min(2.5em, 4vw);
 }
 
 /* Definições para o card de contato */
 .contato_card {
-    width: 8em;
+    width: min(8em, 20%);
     text-align: center;
     color: #000;
 }
 
-/* Tamanho do texto do card */
+/* Tamanho do texto do card definido buscando responsividade */
 .contato_card p {
-    font-size: 1.6em;
+    font-size: clamp(1.2em, 5vw, 1.6em);
 }
 
-/* Tamanho e margem vertical para a imagem do card */
+/* Imagem do card deve ocupar todo o espaço disponível */
 .contato_card img {
     width: 100%;
 }
