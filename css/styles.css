@@ -26,11 +26,15 @@ p, h3 {
     font-family: "Questrial", sans-serif;
 }
 
-/* Definindo font-size para os títulos de seção e link principal do nav */
-.link_main, h2 {
-    font-size: 1.8em;
+/* Definindo font-size responsivo para os títulos de seção e título da página*/
+.titulo, h2 {
+    font-size: clamp(1.4em, 3vw, 2em);
 }
 
+/* Definindo margem horizontal para o título da página */
+.titulo {
+    margin: 0 30px;
+}
 
 /* Alterando a cor das linhas que dividem as seções */
 hr {
@@ -44,9 +48,16 @@ header, footer {
     padding: 1em;
 }
 
-/* Centralizando horizontalmente a NAV que está no footer */
-footer {
-    justify-items: center;
+/* Centralizando horizontalmente o conteúdo do footer e definindo um font-size responsivo */
+footer p {
+    text-align: center;
+    font-size: clamp(1em, 3vw, 1.2em);
+}
+
+/* Fixando o header no topo da página */
+header {
+    position: sticky;
+    top: 0;
 }
 
 /* Definindo background do main */
@@ -68,14 +79,14 @@ a {
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* Definindo cor, margem lateral e tamanho para os links do nav */
 nav a {
     color: #fff;
-    font-size: 1.4em;
+    font-size: clamp(1.1em, 2vw, 1.4em);
     margin: 0 30px;
 }
 
@@ -88,7 +99,6 @@ section {
 .link_secoes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* Cor para os links do nav ao passar do mouse */

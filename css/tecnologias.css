@@ -13,7 +13,7 @@
 .card_habilidades {
     background-color: #f1f1f1;
     box-shadow: 0 0 2px #252525;
-    width: min(6.5em, 20%);
+    width: min(6.5em, 25%);
     border-radius: 10px;
     max-height: fit-content;
     transition: box-shadow 0.5s ease-in-out;
@@ -28,13 +28,15 @@
 /* Parte inferior do card que só deve ser exibida ao passar do mouse */
 .info_tecnologias {
     text-align: center;
-    font-size: 1.2em;
-    max-height: 0;
-    margin-bottom: 5px;
+    word-wrap: break-word;
     overflow: hidden;
+    font-size: clamp(1em, 3vw, 1.3em);
+    margin-bottom: 5px;
+    max-height: 0;
     transition: max-height 1s ease-in-out;
 }
 
+/* Ao passar com o mouse em cima do card, o card se expande e exibe o nome do ícone sendo apresentado na imagem */
 .card_habilidades:hover .info_tecnologias {
     max-height: 50px;
 }

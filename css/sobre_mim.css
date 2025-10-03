@@ -34,5 +34,5 @@
 
 /* Definindo font-size responsivo para o texto */
 .info_sobre p {
-    font-size: 1.4em;
+    font-size: clamp(1.15em, 3vw, 1.4em);
 }
