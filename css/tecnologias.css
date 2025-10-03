@@ -13,7 +13,7 @@
 .card_habilidades {
     background-color: #f1f1f1;
     box-shadow: 0 0 2px #252525;
-    width: min(6.5em, 25%);
+    width: min(6.5em, 20%);
     border-radius: 10px;
     max-height: fit-content;
     transition: box-shadow 0.5s ease-in-out;

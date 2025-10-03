@@ -54,10 +54,12 @@ footer p {
     font-size: clamp(1em, 3vw, 1.2em);
 }
 
-/* Fixando o header no topo da página */
+/* Fixando o header no topo da página, definindo altura de 75px e overflow auto para quando precisar rolar os elementos do nav */
 header {
     position: sticky;
     top: 0;
+    height: 75px;
+    overflow: auto;
 }
 
 /* Definindo background do main */
@@ -80,6 +82,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    height: 100%;
     justify-content: space-between;
 }
 
@@ -90,9 +93,10 @@ nav a {
     margin: 0 30px;
 }
 
-/* Definindo padding vertical responsivo e horizontal de 1em */
+/* Definindo padding vertical responsivo e horizontal de 1em, além de um scroll-margin-top para que o scroll das seções fique adequado */
 section {
     padding: min(5em, 8vw) 1em;
+    scroll-margin-top: 75px;
 }
 
 /* Por questão de responsividade, definindo a div que contém os links das seções com uma flexbox com wrap ativado */
