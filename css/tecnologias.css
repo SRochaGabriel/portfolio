@@ -1,26 +1,52 @@
 /* --------- ESTILOS DA SEÇÃO 'TECNOLOGIAS E HABILIDADES' --------- */
 
-/* Definindo o container que exibe os cards de tecnologias como um flexbox com seu conteúdo alinhado horizontalmente de maneira central e com um gap de 2em */
+/* Definindo o container que exibe os cards de tecnologias como um flexbox centralizado na página, escondendo itens que estão em overflow, com width responsivo, pequeno padding para não cortar o box-shadow dos cards e margin-top responsivo para afastar o container do título da seção */
 .container_tecnologias {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em 2em;
+    overflow: hidden;
+    justify-self: center;
+    width: min(900px, 80%);
+    padding: 1px;
     margin-top: min(2.5em, 4vw);
 }
 
-/* Configurando o tamanho e alinhamento do texto do card de habilidades */
+/* Definindo que, ao passar com o mouse no container pai, a animação de scroll é pausada */
+.container_tecnologias:hover .grupo_cards {
+    animation-play-state: paused;
+}
+
+/* Flexbox que exibe os cards lado a lado e aplica a animação definida pelo identificador SCROLL */
+.grupo_cards {
+    display: flex;
+    gap: 2em;
+    padding-right: 2em;
+    animation: scroll 15s linear infinite;
+}
+
+/* Animação de scroll que vai ser aplicada a div GRUPO_CARDS */
+@keyframes scroll {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100%;
+    }
+}
+
+/* Definições para os cards de habilidades */
 .card_habilidades {
     background-color: #f1f1f1;
     box-shadow: 0 0 2px #252525;
-    width: min(6.5em, 20%);
+    /* Definindo, com o flex-shrink para 0, que os cards mantenham seu tamanho e produzam overflow no CONTAINER_TECNOLOGIAS. Com o flex-basis, um tamanho padrão para os cards */
+    flex-shrink: 0;
+    flex-basis: 5.5em;
     border-radius: 10px;
     max-height: fit-content;
     transition: box-shadow 0.5s ease-in-out;
 }
 
 /* Garantindo que a imagem tome 100% do espaço que puder tomar no card */
-.card_tec_img {
+.card_tech_img {
     width: 100%;
     padding: 5px 5px 0 5px;
 }
@@ -30,7 +56,8 @@
     text-align: center;
     word-wrap: break-word;
     overflow: hidden;
-    font-size: clamp(1em, 3vw, 1.3em);
+    font-size: 1.1em;
+    font-weight: 600;
     margin-bottom: 5px;
     max-height: 0;
     transition: max-height 1s ease-in-out;
