@@ -60,6 +60,7 @@ header {
     top: 0;
     height: 75px;
     overflow: auto;
+    z-index: 1;
 }
 
 /* Definindo background do main */
