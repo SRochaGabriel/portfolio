@@ -8,17 +8,46 @@
     <link rel="stylesheet" href="css/tecnologias.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contato.css">
+    <script src="https://kit.fontawesome.com/44923565ae.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
     <title>Gabriel Sousa Rocha</title>
 </head>
 <body>
     <header> <!-- Cabeçalho -->
-        <nav> <!-- Barra de navegação com os links -->
-            <h2 class="titulo">Gabriel Sousa Rocha</h2 class="titulo">
-            <div class="link_secoes">
-                <a href="#secao_sobre">Sobre</a>
-                <a href="#secao_tecnologias">Tecnologias</a>
-                <a href="#secao_projetos">Projetos</a>
-                <a href="#secao_contato">Contato</a>
+        <!--
+            <nav> <! Barra de navegação com os links >
+                <h2 class="titulo">Gabriel Sousa Rocha</h2>
+                <div class="link_secoes">
+                    <a href="#secao_sobre">Sobre</a>
+                    <a href="#secao_tecnologias">Tecnologias</a>
+                    <a href="#secao_projetos">Projetos</a>
+                    <a href="#secao_contato">Contato</a>
+                </div>
+            </nav>
+        -->
+        <nav class="navbar">
+            <h2 class="titulo">Gabriel Sousa Rocha</h2>
+
+            <button aria-label="toggle menu" id="btn_menu_toggle">
+                <i class="fa-solid fa-bars" id="btn_open"></i>
+                <i class="fa-regular fa-circle-xmark" id="btn_close"></i>
+            </button>
+
+            <div class="navbar-links">
+                <ul>
+                    <li>
+                        <a href="#secao_sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#secao_tecnologias">Tecnologias</a>
+                    </li>
+                    <li>
+                        <a href="#secao_projetos">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#secao_contato">Contato</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>

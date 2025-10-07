@@ -16,7 +16,7 @@ html {
 }
 
 /* Definindo fonte e peso de fonte para subtítulos de segundo nível e links de navegação */
-h2, nav a {
+h2, .navbar-links a {
     font-family: "Noto Serif Bengali", serif;
     font-weight: 400;
 }
@@ -58,8 +58,6 @@ footer p {
 header {
     position: sticky;
     top: 0;
-    height: 75px;
-    overflow: auto;
     z-index: 1;
 }
 
@@ -78,26 +76,89 @@ a {
     text-decoration: none;
 }
 
-/* Definindo os Navs como flexbox com seus itens alinhandos verticalmente ao centro e com space-between no eixo principal */
-nav {
+/* --------- DEFINIÇÃO DO NAVBAR COLAPSÁVEL --------- */
+/* Definindo o nav */
+.navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 100%;
     justify-content: space-between;
 }
 
+/* Configurações para a lista não ordenada de links dentro do nav */
+.navbar-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
 /* Definindo cor, margem lateral e tamanho para os links do nav */
-nav a {
+.navbar-links a {
     color: #fff;
     font-size: clamp(1.1em, 2vw, 1.4em);
     margin: 0 30px;
 }
 
+/* Definições para o botão de abrir/fechar a navbar */
+#btn_menu_toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin: 10px 25px;
+}
+
+/* Definições para os ícones do botão de abrir/fechar a navbar */
+#btn_menu_toggle i {
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Definição de display padrão para os ícones com id BTN_OPEN e BTN_CLOSE*/
+#btn_menu_toggle #btn_open {
+    display: block;
+}
+#btn_menu_toggle #btn_close {
+    display: none;
+}
+
+/* Definição de display para os ícones BTN_OPEN e BTN_CLOSE quando o botão de toggle receber a classe que indica que ele foi clicado */
+#btn_menu_toggle.aberto #btn_open {
+    display: none;
+}
+#btn_menu_toggle.aberto #btn_close {
+    display: block;
+}
+
+
+/* Regras que serão ativadas em telas de exibição com menos de 870px de width */
+@media screen and (max-width: 870px) {
+    #btn_menu_toggle {
+        display: block;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .navbar-links.aberto {
+        display: block;
+        width: 100%;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+    }
+}
+/* -------------------------------------------- */
+
 /* Definindo padding vertical responsivo e horizontal de 1em, além de um scroll-margin-top para que o scroll das seções fique adequado */
 section {
     padding: min(5em, 8vw) 1em;
     scroll-margin-top: 75px;
+}
+
+/* Regras que serão ativadas em telas de exibição com menos de 393px de width */
+@media screen and (max-width: 393px) {
+    section {
+        scroll-margin-top: 115px;
+    }
 }
 
 /* Por questão de responsividade, definindo a div que contém os links das seções com uma flexbox com wrap ativado */
@@ -107,7 +168,7 @@ section {
 }
 
 /* Cor para os links do nav ao passar do mouse */
-nav a:hover {
+.navbar a:hover {
     color: #ffc400;
     transition: color 0.2s ease-in-out;
 }
