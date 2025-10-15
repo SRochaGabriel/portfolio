@@ -41,8 +41,6 @@
     flex-shrink: 0;
     flex-basis: 5.5em;
     border-radius: 10px;
-    max-height: fit-content;
-    transition: box-shadow 0.5s ease-in-out;
 }
 
 /* Garantindo que a imagem tome 100% do espaço que puder tomar no card */
@@ -55,20 +53,7 @@
 .info_tecnologias {
     text-align: center;
     word-wrap: break-word;
-    overflow: hidden;
     font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 5px;
-    max-height: 0;
-    transition: max-height 1s ease-in-out;
-}
-
-/* Ao passar com o mouse em cima do card, o card se expande e exibe o nome do ícone sendo apresentado na imagem */
-.card_habilidades:hover .info_tecnologias {
-    max-height: 50px;
-}
-
-/* Aumento do box-shadow ao passar do mouse no card */
-.card_habilidades:hover {
-    box-shadow: 0 0 5px #252525;
 }
