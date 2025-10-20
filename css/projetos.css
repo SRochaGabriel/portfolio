@@ -16,18 +16,25 @@
     border-radius: 10px;
     border: 3px solid #252525;
     width: 25em;
+    display: flex;
+    flex-direction: column;
     color: #fff;
+}
+
+/* Div que separa a parte de informações do card da imagem. Essa div é uma flexbox em direção de coluna que garante que todos os elementos terão a mesma posição */
+.card_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1em;
 }
 
 /* Garantindo que a imagem do projeto tome 100% de width do card e tenha um border radius de 8px para os cantos superiores e 0 para os cantos inferiores*/
 .projeto_cover {
     width: 100%;
     border-radius: 8px 8px 0 0;
-}
-
-/* Definindo padding de 1em para as sub-seções do card */
-.card_projeto_header, .card_projeto_body, .card_projeto_footer {
-    padding: 1em;
 }
 
 /* Definindo margem inferior de 5px para o nome do projeto */
