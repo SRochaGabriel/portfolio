@@ -1,0 +1,29 @@
+[
+    {
+        "id": "project-1",
+        "name": "CONVRTR",
+        "desc": "Conversor de imagens, áudios e vídeos",
+        "image": "./imagens/convrtr_screenshot.png",
+        "stack": ["HTML5", "CSS3", "Javascript", "Bootstrap", "Python", "Flask"],
+        "deploy": "https://srocha.pythonanywhere.com/",
+        "rep": "https://github.com/SRochaGabriel/convrtr-flask-app"
+    },
+    {
+        "id": "project-2",
+        "name": "Academia do Código Aberto",
+        "desc": "Site conceitual para uma plataforma de cursos",
+        "image": "./imagens/aca_screenshot.png",
+        "stack": ["HTML5", "CSS3"],
+        "deploy": "https://srochagabriel.github.io/projeto-aca-ios/",
+        "rep": "https://github.com/SRochaGabriel/projeto-aca-ios"
+    },
+    {
+        "id": "project-3",
+        "name": "Guess The Character: Rick and Morty",
+        "desc": "Jogo de acertar o nome do personagem feito com a Rick and Morty API",
+        "image": "./imagens/guessthechar_screenshot.png",
+        "stack": ["HTML5", "CSS3", "Javascript"],
+        "deploy": "https://srochagabriel.github.io/rickandmorty-character-guesser/",
+        "rep": "https://github.com/SRochaGabriel/rickandmorty-character-guesser"
+    }
+]
