@@ -3,28 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/sobre_mim.css">
     <link rel="stylesheet" href="css/tecnologias.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contato.css">
     <script src="https://kit.fontawesome.com/44923565ae.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
     <script src="index.js" defer></script>
     <title>Gabriel Sousa Rocha</title>
 </head>
 <body>
-    <header> <!-- Cabeçalho -->
-        <!--
-            <nav> <! Barra de navegação com os links >
-                <h2 class="titulo">Gabriel Sousa Rocha</h2>
-                <div class="link_secoes">
-                    <a href="#secao_sobre">Sobre</a>
-                    <a href="#secao_tecnologias">Tecnologias</a>
-                    <a href="#secao_projetos">Projetos</a>
-                    <a href="#secao_contato">Contato</a>
-                </div>
-            </nav>
-        -->
+    <header>
         <nav class="navbar">
             <h2 class="titulo">Gabriel Sousa Rocha</h2>
 
@@ -162,7 +153,14 @@
         <section id="secao_projetos">
             <h2>Projetos</h2>
 
-            <div class="projetos_display"></div>
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </section>
 
         <hr>

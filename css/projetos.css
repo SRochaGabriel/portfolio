@@ -1,21 +1,12 @@
 /* --------- ESTILOS DA SEÇÃO 'PROJETOS' --------- */
 
-/* Definindo que a seção que contém os cards dos projetos será um flexbox com gap de 5em entre seus itens e alinhamento horizontal central */
-.projetos_display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3em;
-    padding: 0 1em;
-    margin-top: min(2.5em, 4vw);
-}
-
 /* Definições para o card que exibe um projeto */
 .card_projeto {
     background-color: #252525;
     border-radius: 10px;
     border: 3px solid #252525;
-    width: 25em;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -82,4 +73,38 @@
 /* Width de 3em para os ícones de link e do github */
 .link_projeto_icon {
     width: 3em;
+}
+
+/* DEFINIÇÕES DO SWIPER */
+.swiper-container {
+    width: min(70rem, 85%);
+    padding: 0.5rem 0 2rem 0;
+    justify-self: center;
+    position: relative;
+}
+
+.swiper {
+    position: static;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.swiper-button-next {
+    right: -4rem !important;
+}
+
+.swiper-button-prev {
+    left: -4rem !important;
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+}
+
+@media (max-width: 668px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
 }

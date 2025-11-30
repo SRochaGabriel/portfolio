@@ -58,7 +58,7 @@ footer p {
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100;
 }
 
 /* Definindo background do main */
@@ -151,7 +151,7 @@ a {
 /* Definindo padding vertical responsivo e horizontal de 1em, além de um scroll-margin-top para que o scroll das seções fique adequado */
 section {
     padding: min(5em, 8vw) 1em;
-    scroll-margin-top: 75px;
+    scroll-margin-top: 60px;
 }
 
 /* Regras que serão ativadas em telas de exibição com menos de 393px de width */
