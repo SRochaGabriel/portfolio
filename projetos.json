@@ -25,5 +25,23 @@
         "stack": ["HTML5", "CSS3", "Javascript"],
         "deploy": "https://srochagabriel.github.io/rickandmorty-character-guesser/",
         "rep": "https://github.com/SRochaGabriel/rickandmorty-character-guesser"
+    },
+    {
+        "id": "project-4",
+        "name": "Loja Bird Sound",
+        "desc": "Loja virtual fictícia baseada na loja real de mesmo nome",
+        "image": "./imagens/birdsound_screenshot.png",
+        "stack": ["HTML5", "CSS3", "Javascript"],
+        "deploy": "https://srochagabriel.github.io/projeto-birdsound/",
+        "rep": "https://github.com/SRochaGabriel/projeto-birdsound"
+    },
+    {
+        "id": "project-5",
+        "name": "ReacTarefas",
+        "desc": "Gerenciador de tarefas",
+        "image": "./imagens/reactarefas_screenshot.png",
+        "stack": ["HTML5", "CSS3", "Javascript", "React"],
+        "deploy": "https://reactarefas.vercel.app/",
+        "rep": "https://github.com/SRochaGabriel/ReacTarefas"
     }
 ]
