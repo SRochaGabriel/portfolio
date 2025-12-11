@@ -40,7 +40,7 @@
         "name": "ReacTarefas",
         "desc": "Gerenciador de tarefas",
         "image": "./imagens/reactarefas_screenshot.png",
-        "stack": ["HTML5", "CSS3", "Javascript", "React"],
+        "stack": ["HTML5", "CSS3", "Javascript", "React", "Firebase"],
         "deploy": "https://reactarefas.vercel.app/",
         "rep": "https://github.com/SRochaGabriel/ReacTarefas"
     }
