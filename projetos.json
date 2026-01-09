@@ -43,5 +43,14 @@
         "stack": ["HTML5", "CSS3", "Javascript", "React", "Firebase"],
         "deploy": "https://reactarefas.vercel.app/",
         "rep": "https://github.com/SRochaGabriel/ReacTarefas"
+    },
+    {
+        "id": "project-6",
+        "name": "WebMovies",
+        "desc": "Catálogo de informações de filmes com TMDB API",
+        "image": "./imagens/webmovies_screenshot.png",
+        "stack": ["HTML5", "SCSS", "Javascript", "React"],
+        "deploy": "https://web-movies-chi.vercel.app/",
+        "rep": "https://github.com/SRochaGabriel/WebMovies"
     }
 ]

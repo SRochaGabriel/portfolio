@@ -66,7 +66,7 @@ fetch('projetos.json')
                         </div>
                         <div class="card_projeto_body"></div>
                         <div class="card_projeto_footer">
-                            <a href="${project.deploy}">
+                            <a href="${project.deploy}" target="_blank">
                                 <img class="link_projeto_icon" src="./imagens/link_logo.png" alt="Link deploy">
                                 <p>Acesse o site</p>
                             </a>
