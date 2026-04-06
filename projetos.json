@@ -18,15 +18,6 @@
         "rep": "https://github.com/SRochaGabriel/projeto-aca-ios"
     },
     {
-        "id": "project-3",
-        "name": "Guess The Character: Rick and Morty",
-        "desc": "Jogo de acertar o nome do personagem feito com a Rick and Morty API",
-        "image": "./imagens/guessthechar_screenshot.png",
-        "stack": ["HTML5", "CSS3", "Javascript"],
-        "deploy": "https://srochagabriel.github.io/rickandmorty-character-guesser/",
-        "rep": "https://github.com/SRochaGabriel/rickandmorty-character-guesser"
-    },
-    {
         "id": "project-4",
         "name": "Loja Bird Sound",
         "desc": "Loja virtual fictícia baseada na loja real de mesmo nome",
